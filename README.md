@@ -79,7 +79,10 @@ _LOGISTIC REGRESSION_
 _RANDOM FOREST_
 • Accuracy: 0.6819
 _SVM_
-• Accuracy: 0.56
+• Linear Kernel Accuracy: 0.6868
+• Poly Kernel Accuracy: 0.6711
+• RBF Kernel Accuracy: 0.6714
+• Sigmoid Kernel Accuracy: 0.6375
 
 **Conclusion**
 Using all methods and focusing on poverty, ethnicity, and education level,
