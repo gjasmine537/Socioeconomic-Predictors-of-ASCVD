@@ -76,7 +76,7 @@ testing and 80% for training.
 _SVM_
 • SVM was created based on a data split of 20% for testing and 80% for
 training,
-• All kernels preformed with a difference between 2%
+• All kernels preformed with a difference between 5%
 
 **Results**
 
