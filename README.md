@@ -22,6 +22,7 @@ cardiological disease risks and predicting potential pulmonary diseases
 within different population groups.
 
 **Background**
+
 ASCVD, or atherosclerotic cardiovascular disease, is one of the
 leading causes of morbidity and mortality in the United States. This
 term refers to multiple conditions in which plaque builds up in the
@@ -44,6 +45,7 @@ various classification models, we can better predict future
 cardiovascular disease risk based on these factors.
 
 **Preprocessing**
+
 Targets like income level [PIR], education [edu], ethnicity [eth], and poverty
 were selected as features and were hot encoded. Missing data were filled
 with the median value and data was split into two (20% testing and 80%
@@ -53,32 +55,40 @@ was computed to be balanced between the positive and negative ASCVD
 labels due to a much larger proportion of negative ASCVD samples.
 
 **Classification Models**
+
 _MLP_
 • A neural network was built with the following architecture
 • Input layer with matching number of the features
 • Four hidden layers (dense layers 128, 64, 32 16) and an output layer early
 stopping was used to avoid overfitting
+
 _LOGISTIC REGRESSION_
 • A logistic regression model was created based on a data split of 20% for
 testing and 80% for training.
 • Maximum iteration was set to 1000.
+
 _RANDOM FOREST_
 • A random forest model was created based on a data split of 20% for
 testing and 80% for training.
 • The number of estimators used was 150 and max depth was 100.
 • Entropy was used to measure feature importance.
+
 _SVM_
 • SVM was created based on a data split of 20% for testing and 80% for
 training,
 • All kernels preformed with a difference between 2%
 
 **Results**
+
 _MLP_
 • Leaky Relu Accuracy: 0.60
+
 _LOGISTIC REGRESSION_
 • Accuracy: 0.5717
+
 _RANDOM FOREST_
 • Accuracy: 0.6819
+
 _SVM_
 • Linear Kernel Accuracy: 0.6868
 • Poly Kernel Accuracy: 0.6711
@@ -86,6 +96,7 @@ _SVM_
 • Sigmoid Kernel Accuracy: 0.6375
 
 **Conclusion**
+
 Using all methods and focusing on poverty, ethnicity, and education level,
 we found better results in predicting when patients did not have
 cardiovascular disease than we did when estimating whether they did. By
@@ -96,6 +107,7 @@ factors such as diet, which would need more specific data, could also be a
 accurate factor of developing cardiovascular disease.
 
 **Future Direction**
+
 • In the future, we can add more layers to the MLP or use KNN/CNN to get
 more robust data and better comparisons between different techniques.
 • More people with positive ASCVD can be added to improve the models.
@@ -106,6 +118,7 @@ disease diagnoses through social and economic programs.
 liver, respiratory, or neurological diseases.
 
 **Acknowledgement**
+
 We would like to thank Dr. Nouhad Rizk from the Department of Natural
 Sciences and Mathematics. This work made use of open-source libraries:
 Matplotlib, Numpy, Tensorflow, and Keras
