@@ -2,6 +2,7 @@
 Multiple machine learning models are used in the scope of this project to predict ASCVD using socioeconomic factors.
 
 **Abstract**
+
 Accessing cardiovascular disease risks across different population
 groups is crucial for improving healthcare treatments and tailoring
 medical interventions to the specific needs of diverse communities.
